@@ -1,0 +1,211 @@
+{% extends 'backend/base.html' %}
+
+
+{% load static %}
+
+
+{% block content %}
+    <!--breadcrumbs area start-->
+    <div class="breadcrumbs_area">
+        <div class="container">   
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <ul>
+                            <li><a href="{% url 'index' %}">home</a></li>
+                            <li>All event</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>         
+    </div>
+    <!--breadcrumbs area end-->
+	
+	
+	<!--blog body area start-->
+    <div class="blog_details mt-60">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-9">
+                    <div class="blog_wrapper">
+                        <div class="section-title">
+                            <h2>All Events</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <article class="single_blog mb-60">
+                                    <figure>
+                                        <div class="blog_thumb">
+                                            <a href="{% url 'choice:event' %}"><img src="{% static 'public/img/product/ankara.jpg' %}" alt=""></a>
+                                        </div>
+                                        <figcaption class="blog_content">
+                                            <h3><a href="{% url 'choice:event' %}">Aso ebi for your party</a></h3>
+                                            <div class="blog_meta">                                        
+                                                <span class="author">Posted by : <a href="#">admin</a> / </span>
+                                                <span class="post_date">On : <a href="#">April 10, 2021</a></span>
+                                            </div>
+                                            <div class="event_desc">
+                                                <p>We have different styles that is trending now for your any kind of party. kindly contact us on any of our contacts...... </p>
+                                            </div>
+                                            <footer class="readmore_button">
+                                                <a href="{% url 'choice:event' %}">read more</a>
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <article class="single_blog mb-60">
+                                    <figure>
+                                        <div class="blog_thumb">
+                                            <a href="{% url 'choice:event' %}"><img src="{% static 'public/img/product/event5.jpg' %}" alt=""></a>
+                                        </div>
+                                        <figcaption class="blog_content">
+                                            <h3><a href="{% url 'choice:event' %}">Naming Ceremony</a></h3>
+                                            <div class="blog_meta">                                        
+                                                <span class="author">Posted by : <a href="#">admin</a> / </span>
+                                                <span class="post_date">On : <a href="#">April 10, 2021</a></span>
+                                            </div>
+                                            <div class="event_desc">
+                                                <p>For your naming ceremony or any other party or events. we have different trending styles. </p>
+                                            </div>
+                                            <footer class="readmore_button">
+                                                <a href="{% url 'choice:event' %}">read more</a>
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <article class="single_blog">
+                                    <figure>
+                                        <div class="blog_thumb">
+                                            <a href="{% url 'choice:event' %}"><img src="{% static 'public/img/product/wedd1.jpg' %}" alt=""></a>
+                                        </div>
+                                        <figcaption class="blog_content">
+                                            <h3><a href="{% url 'choice:event' %}">Wedding celebration</a></h3>
+                                            <div class="blog_meta">                                        
+                                                <span class="author">Posted by : <a href="#">admin</a> / </span>
+                                                <span class="post_date">On : <a href="#">April 10, 2021</a></span>
+                                            </div>
+                                            <div class="blog_desc">
+                                                <p>For the wedding celebration, we have different type of wedding dresses </p>
+                                            </div>
+                                            <footer class="readmore_button">
+                                                <a href="{% url 'choice:event' %}">read more</a>
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <article class="single_blog">
+                                    <figure>
+                                        <div class="blog_thumb">
+                                            <a href="{% url 'choice:event' %}"><img src="{% static 'public/img/product/event4.jpg' %}" alt=""></a>
+                                        </div>
+                                        <figcaption class="blog_content">
+                                            <h3><a href="{% url 'choice:event' %}">Wedding Ceremony</a></h3>
+                                            <div class="blog_meta">                                        
+                                                <span class="author">Posted by : <a href="#">admin</a> / </span>
+                                                <span class="post_date">On : <a href="#">April 10, 2021</a></span>
+                                            </div>
+                                            <div class="blog_desc">
+                                                <p>For the wedding celebration, we have different type of wedding decorations. </p>
+                                            </div>
+                                            <footer class="readmore_button">
+                                                <a href="{% url 'choice:event' %}">read more</a>
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-3 col-md-12">
+                    <div class="blog_sidebar_widget">
+                        <div class="widget_list widget_search">
+                            <h3>Search</h3>
+                            <form action="#">
+                                <input placeholder="Search..." type="text">
+                                <button type="submit">search</button>
+                            </form>
+                        </div>
+                        <div class="widget_list widget_post">
+                            <h3>Recent Posts</h3>
+                            <div class="post_wrapper">
+                                <div class="post_thumb">
+                                    <a href="{% url 'choice:event' %}"><img src="{% static 'public/img/product/event3.jpg' %}" alt=""></a>
+                                </div>
+                                <div class="post_info">
+                                    <h3><a href="{% url 'choice:event' %}">Event image post</a></h3>
+                                    <span>March 16, 2021 </span>
+                                </div>
+                            </div>
+                             <div class="post_wrapper">
+                                <div class="post_thumb">
+                                    <a href="{% url 'choice:event' %}"><img src="{% static 'public/img/product/event2.jpg' %}" alt=""></a>
+                                </div>
+                                <div class="post_info">
+                                    <h3><a href="{% url 'choice:event' %}">Post with Gallery</a></h3>
+                                    <span>March 16, 2021 </span>
+                                </div>
+                            </div>
+                             <div class="post_wrapper">
+                                <div class="post_thumb">
+                                    <a href="{% url 'choice:event' %}"><img src="{% static 'public/img/product/aso-ebi1.jpg' %}" alt=""></a>
+                                </div>
+                                <div class="post_info">
+                                    <h3><a href="{% url 'choice:event' %}">Aso ebi</a></h3>
+                                    <span>March 16, 2021 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget_list widget_tag">
+                            <h3>Our products</h3>
+                            <div class="tag_widget">
+                                <ul>
+                                    <li><a href="{% url 'choice:event' %}">Event</a></li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--blog section area end-->
+	
+	    
+    <!--blog pagination area start-->
+    <div class="blog_pagination">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="pagination">
+                        <ul>
+                            <li class="current">1</li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li class="next"><a href="#">next</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--blog pagination area end-->
+	
+	
+    <!--footer area start-->
+</body>
+
+<!-- blog.html  03:25:02 GMT -->
+</html>
+
+{% endblock %}

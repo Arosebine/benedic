@@ -1,0 +1,118 @@
+{% extends 'backend/base.html' %}
+{% load static %}
+
+
+
+
+{% block content %}
+    <!--header area start-->
+    <!--Offcanvas menu area start-->
+   
+    <!--header area end-->
+
+    <!--breadcrumbs area start-->
+    <div class="breadcrumbs_area">
+        <div class="container">   
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <ul>
+                            <li><a href="order.html">home</a></li>
+                            <li>Products</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>         
+    </div>
+    <!--breadcrumbs area end-->
+    
+    <!--product details start-->
+    <div class="product_details mt-60 mb-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                   <div class="product-details-tab">
+                        <div id="img-1" class="zoomWrapper single-zoom">
+                            <a href="#">
+                                <img id="zoom1" src="{% static 'public/img/product/ankara2.jpg' %}" data-zoom-image="{% static 'public/img/product/aso-ebi.png' %}" alt="big-1">
+                            </a>
+                        </div>
+                        <div class="single-zoom-thumb">
+                            <ul class="s-tab-zoom owl-carousel single-product-active" id="gallery_01">
+                                <li>
+                                    <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{% static 'public/img/product/ankara.jpg' %}" data-zoom-image="{% static 'public/img/product/ankara.jpg' %}">
+                                        <img src="{% static 'public/img/product/ankara.jpg' %}" alt="zo-th-1"/>
+                                    </a>
+
+                                </li>
+                                <li >
+                                    <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{% static 'public/img/product/ankara2.jpg' %}" data-zoom-image="{% static 'public/img/product/ankara2.jpg' %}">
+                                        <img src="{% static 'public/img/product/ankara2.jpg' %}" alt="zo-th-1"/>
+                                    </a>
+
+                                </li>
+                                <li >
+                                    <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{% static 'public/img/product/ankara4.jpg' %}" data-zoom-image="{% static 'public/img/product/ankara4.jpg' %}">
+                                        <img src="{% static 'public/img/product/ankara4.jpg' %}" alt="zo-th-1"/>
+                                    </a>
+
+                                </li>
+                                <li >
+                                    <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{% static 'public/img/product/okra.jpg' %}" data-zoom-image="{% static 'public/img/product/okra.jpg' %}">
+                                        <img src="{% static 'public/img/product/okra.jpg' %}" alt="zo-th-1"/>
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="product_d_right">
+                       <form action="#">
+                           
+                            <h1>Different types of Aso-ebi and Nigerian cuisines</h1>
+                            <div class=" product_ratting">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li class="review"><a href="#"> (250 reviews) </a></li>
+                                </ul>
+                                
+                            </div>
+                            
+                            <div class="product_desc">
+                                <p>Aso-ebi, as it is popularly called, is a pretty important part of the Nigerian culture of parties. It is any symbol that identifies you as part of a group in an event. So,the affordability of it made it a popular choice. So, we believe in taking the burden of shopping for aso-ebi, selling and delivering it, prepare Nigerian special cuisine and generally curating special luxury experiences for guests in the process,  basically taking the stress off your hands. </p>
+                                <p>So, kindly chat us up for your order here:</p>
+                                <p>
+                                    <a class="whatsapp" href="https://api.whatsapp.com/send?phone=+2348160989806">Whatsapp</a>
+                                </p>
+
+                            </div>
+							
+                        </form>
+                        <div class="priduct_social">
+                            <ul>
+                                <li><a class="facebook" href="#" title="facebook"><i class="fa fa-facebook"></i> Like</a></li>           
+                                <li><a class="twitter" href="#" title="twitter"><i class="fa fa-twitter"></i> tweet</a></li>           
+                                <li><a class="whatsapp" href="https://api.whatsapp.com/send?phone=+2348160989806" title="whatsapp"><i class="fa fa-whatsapp"></i></a></li>       
+                            </ul>      
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!--footer area start-->
+{% endblock %}
+    
+
+
+<!-- product-details.html  03:24:28 GMT -->
+</html>

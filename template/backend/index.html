@@ -1,0 +1,142 @@
+{% extends 'backend/base.html' %}
+{% load static %}
+
+{% block title %}
+Home
+{% endblock %}
+
+
+
+
+
+{% block content %}
+    <!--slider area start-->
+    <section class="slider_section d-flex align-items-center" data-bgimg="{% static 'public/img/slider/slider3.jpg' %}">
+        <div class="slider_area owl-carousel">
+            <div class="single_slider d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6">
+                            <div class="slider_content">
+                                <h1>Home made Nigerian Foods</h1>
+                                <h2>Freshly prepared to suit your taste and nourish your body</h2>
+                             
+                                <a class="button" href="https://api.whatsapp.com/send?phone=+2348160989806">Buy now</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                            <div class="slider_content">
+                                <img src="{% static 'public/img/product/seafood.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="single_slider d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6">
+                            <div class="slider_content">
+                                <h1>Special Aso-ebi</h1>
+                                <h2>Latest trending</h2>
+                               
+                                <a class="button" href="https://api.whatsapp.com/send?phone=+2348160989806">Shop now</a>
+                            </div>
+                        </div>                        
+                        <div class="col-xl-6 col-md-6">
+                            <div class="slider_content">
+                                <img src="{% static 'public/img/product/ankara1.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_slider d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6">
+                            <div class="slider_content">
+                                <h1>Special Aso ebi for your outing</h1>
+                                <h2>Special one for you, family or parties</h2>
+                                
+                                <a class="button" href="https://api.whatsapp.com/send?phone=+2348160989806">shopping now</a>
+                            </div>
+                        </div>                      
+                        <div class="col-xl-6 col-md-6">
+                            <div class="slider_content">
+                                <img src="{% static 'public/img/product/aso-ebi1.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--slider area end-->
+
+    <!--Tranding product-->
+    <section class="pt-60 pb-30 gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="section-title">
+                        <h2>Availabe foods and Event Management for family or parties</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="single-tranding">
+                        <a href="{% url 'choice:product' %}">
+                            <div class="tranding-pro-img">
+                                <img src="{% static 'public/img/product/food1.jpg' %}" alt="">
+                            </div>
+                            <div class="tranding-pro-title">
+                                <h3>Cuisine for family or event</h3>
+                                <h4>Nigerian Made</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="single-tranding">
+                        <a href="{% url 'choice:product' %}">
+                            <div class="tranding-pro-img">
+                                <img src="{% static 'public/img/product/aso-ebi.png' %}" alt="">
+                            </div>
+                            <div class="tranding-pro-title">
+                                <h3>Aso-ebi for family or event</h3>
+                                <h4>Nigerian made</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="single-tranding">
+                        <a href="{% url 'choice:product' %}">
+                            <div class="tranding-pro-img">
+                                <img src="{% static 'public/img/product/event1.jpg' %}" alt="">
+                            </div>
+                            <div class="tranding-pro-title">
+                                <h3>Wedding or Naming Ceremony</h3>
+                                <h4>Well designed</h4>
+                            </div>
+                            <div class="tranding-pro-price">
+                                <div class="price_box">
+                                    <span class="current_price">&#8358;asked for the price</span>
+                                    
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--Tranding product-->
+{% endblock %}
+   
+    
+    
+   
+	

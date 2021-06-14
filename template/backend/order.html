@@ -1,0 +1,173 @@
+{% extends 'backend/base.html' %}
+{% load static %}
+
+{% block title %}
+Order
+{% endblock %}
+
+ 
+
+
+ {% block content %}
+ <link rel="stylesheet" href="{% static 'public/css/order.css' %}">
+
+    <div class="container">
+        <div class="d-flex">
+            <form action="" method="">
+                <label>
+                    <span class="fname">First Name <span class="required">*</span></span>
+                    <input type="text" name="fname">
+                </label>
+                <label>
+                    <span class="lname">Last Name <span class="required">*</span></span>
+                    <input type="text" name="lname">
+                </label>
+                <label>
+                    <span>BOWL OF SOUPS PER LITRE </span>
+                    <select name="selection">
+                        <option value="select">Select...</option>
+                        <option value="VSM">Egusi soup with Goat Meat or Beef and dry fish</option>
+                        <option value="VSF">Okro soup with Goat Meat or Beef and Titus fish cooked or fried</option>
+                        <option value="OKS">Ogbono soup with chicken or Beef and dry fish</option>
+                        <option value="EGS">Bitterleaf soup with Goat meat or Beef and dry fish</option>
+                        <option value="WHS">Vegetable soup with Goat meat or Beef and dry fish</option>
+                        <option value="JOR">Oha soup with Goat meat or Beef and dry fish</option>
+                        <option value="OFR">Banga soup with Goat meat or beef and dry fish or fresh catfish</option>
+                        <option value="FRR">Ofada Sauce with Assorted meat and dry fish</option>
+                        <option value="BLS">Red stew with chicken or gizzard </option>
+                    </select>
+                </label>
+                <label>
+                    <span>Food Size/Price</span>
+                    <select name="selection">
+                        <option value="select">Select the price...</option>
+                        <option value="VSM">2 litres &#8358;10,000</option>
+                        <option value="VSF">3 litres &#8358;15,000</option>
+                        <option value="OKS">5 litres &#8358;20,000</option>
+                        <option value="OKS">Or call to specify your orders</option>
+                    </select>    
+                </label>
+                <label>
+                    <span>BUCK ORDER PER PLATE </span>
+                    <select name="selection">
+                        <option value="select">Select...</option>
+                        <option value="VSM">Egusi soup with Goat Meat or Beef and dry fish</option>
+                        <option value="VSF">Okro soup with Goat Meat or Beef and Titus fish cooked or fried</option>
+                        <option value="OKS">Ogbono soup with chicken or Beef and dry fish</option>
+                        <option value="EGS">Bitterleaf soup with Goat meat or Beef and dry fish</option>
+                        <option value="WHS">Vegetable soup with Goat meat or Beef and dry fish</option>
+                        <option value="JOR">Oha soup with Goat meat or Beef and dry fish</option>
+                        <option value="OFR">Banga soup with Goat meat or beef and dry fish or fresh catfish</option>
+                        <option value="FRR">Ofada Sauce with Assorted meat and dry fish</option>
+                        <option value="BLS">Red stew with chicken or gizzard </option>
+                    </select>
+                </label>
+                <label>
+                    <span>Food Size/Price</span>
+                    <select name="selection">
+                        <option value="select">Select your Buck order price...</option>
+                        <option value="VSM">20 plates &#8358;40,000</option>
+                        <option value="VSF">30 litres &#8358;60,000</option>
+                        <option value="OKS">40 litres &#8358;80,000</option>
+                        <option value="OKS">Or call to specify your orders</option>
+                    </select>    
+                </label>
+                <label>
+                    <span>Company Name (Optional)</span>
+                    <input type="text" name="cn">
+                </label>
+                <label>
+                    <span>State<span class="required">*</span></span>
+                    <select name="selection">
+                        <option value="select">Select a state...</option>
+                        <option value="AFG">Adamawa</option>
+                        <option value="ALA">Akwa Ibom</option>
+                        <option value="ALB">Abia</option>
+                        <option value="DZA">Anambra</option>
+                        <option value="ASM">Bauchi </option>
+                        <option value="AND">Benue</option>
+                        <option value="AGO">Borno</option>
+                        <option value="AIA">Cross River</option>
+                        <option value="ATA">Delta</option>
+                        <option value="ATG">Ebonyi</option>
+                        <option value="ARG">Edo</option>
+                        <option value="ARM">Ekiti </option>
+                        <option value="ABW">Enugu </option>
+                        <option value="AUS">Federal Capital Territory</option>
+                        <option value="AUT">Gombe</option>
+                        <option value="AZE">Imo</option>
+                        <option value="BHS">Jigawa</option>
+                        <option value="BHR">Kaduna</option>
+                        <option value="BGD">Kano</option>
+                        <option value="BRB">Katsina</option>
+                        <option value="BLR">Kebbi </option>
+                        <option value="BEL">Kogi</option>
+                        <option value="BLZ">Kwara</option>
+                        <option value="BEN">Lagos</option>
+                        <option value="BMU">Nasarawa</option>
+                        <option value="BTN">Niger </option>
+                        <option value="BOL">Ogun</option>
+                        <option value="BES">Ondo</option>
+                        <option value="BIH">Osun</option>
+                        <option value="BWA">Oyo</option>
+                        <option value="BVT">Plateau</option>
+                        <option value="BRA">Rivers</option>
+                        <option value="IOT">Sokoto</option>
+                        <option value="BRN">Taraba</option>
+                        <option value="BGR">Yobe</option>
+                        <option value="BFA">Zamfara</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Street Address <span class="required">*</span></span>
+                    <input type="text" name="houseadd" placeholder="House number and street name" required>
+                </label>
+                <label>
+                    <span>&nbsp;</span>
+                    <input type="text" name="apartment" placeholder="Apartment, suite, unit etc. (optional)">
+                </label>
+                <label>
+                    <span>Town / City <span class="required">*</span></span>
+                    <input type="text" name="city"> 
+                </label>
+                
+                <label>
+                    <span>Phone <span class="required">*</span></span>
+                    <input type="tel" name="city"> 
+                </label>
+                <label>
+                    <span>Email Address <span class="required">*</span></span>
+                    <input type="email" name="city"> 
+                </label>
+            </form>
+
+        <div class="Yorder">       
+            <div>
+                <input type="radio" name="dbt" value="dbt" checked> Direct Bank Transfer
+            </div>
+            <p>
+            Make your payment directly into our bank account. 
+            Your order will not be shipped until the funds have cleared in our account.
+            </p>
+            <p>Bank Name: FCMB</p>
+            <p>Account Number:2189004567</p>
+            <p> Account Name: Stunners Choice Concept</p>
+            <div>
+                <input type="radio" name="dbt" value="cd"> Cash on Delivery
+            </div>
+            <div>
+                <input type="radio" name="dbt" value="dbt" checked>contact us on whatsapp
+            </div>
+            <div>
+                <input type="radio" name="dbt" value="cd"> Paystack <span>
+                    <img src="{% static 'public/https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg' %}" alt="" width="50"></span>
+            </div>
+            <button a href="#" type="button">Place Order</a></button>
+        </div><!-- Yorder -->
+    </div>
+</div>
+
+
+
+
+{% endblock %}
